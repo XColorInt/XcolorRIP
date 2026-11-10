@@ -135,3 +135,31 @@ h3.feat { font-size: 24px; margin: 0 0 12px; }
 
 .btn small { font-weight: 400; opacity: .8; }
 .card .btn { margin: 0 8px 8px 0; }
+
+/* blog feed */
+ul.feedlist { list-style: none; padding: 0; margin: 0; }
+ul.feedlist li { padding: 12px 4px; border-bottom: 1px solid var(--line); }
+ul.feedlist .fdate { display: inline-block; min-width: 110px; color: var(--muted); font-size: 14px; }
+ul.feedlist a { color: var(--ink); text-decoration: none; font-weight: 600; }
+ul.feedlist a:hover { color: var(--accent); }
+.feed .thumb { width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px; display: block; }
+.feed .card h3 a { color: var(--ink); text-decoration: none; }
+.feed .card h3 a:hover { color: var(--accent); }
+/* single post: post on the left, list of the same kind on the right */
+.postwrap { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 40px; align-items: start; }
+.postbody { min-width: 0; }
+.postside { border-left: 1px solid var(--line); padding-left: 24px; position: sticky; top: 80px; }
+.postside h3 { margin: .2em 0 .6em; font-size: 17px; }
+.postside ul.feedlist li { padding: 9px 2px; }
+.postside ul.feedlist .fdate { display: block; min-width: 0; font-size: 13px; }
+.postside ul.feedlist li.cur { background: rgba(237, 28, 36, .07); border-radius: 8px; padding-left: 8px; }
+.postside ul.feedlist li.cur a { color: var(--accent); }
+@media (max-width: 860px) { .postwrap { grid-template-columns: 1fr; } .postside { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 20px; position: static; } }
+.postbody h1.ptitle { font-size: 30px; margin: .2em 0 .1em; }
+.postbody .pbody { font-size: 17px; line-height: 1.75; word-break: break-word; }
+.postbody .pbody img { max-width: 100%; height: auto; border-radius: 10px; }
+.postbody .pbody a { color: var(--accent); }
+.postbody .pbody iframe { max-width: 100%; }
+.postbody .pbody .separator { margin: 1em 0; }
+.postbody .pnav { margin-top: 2em; padding-top: 1em; border-top: 1px solid var(--line); }
+.postbody .pnav a { color: var(--accent); font-weight: 600; text-decoration: none; }

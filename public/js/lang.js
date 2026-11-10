@@ -30,6 +30,7 @@
     });
 
     if (inKo) return;                       // Korean pages never redirect
+    if (document.documentElement.hasAttribute('data-nolang')) return;   // post.html?id=... keeps its address
 
     var wantKo;
     if (choice) wantKo = (choice === 'ko');
