@@ -163,3 +163,8 @@ ul.feedlist a:hover { color: var(--accent); }
 .postbody .pbody .separator { margin: 1em 0; }
 .postbody .pnav { margin-top: 2em; padding-top: 1em; border-top: 1px solid var(--line); }
 .postbody .pnav a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+/* PayPal box (download page) */
+.paybox { margin-top: 28px; padding: 22px 24px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); max-width: 560px; }
+.paybox h3 { margin: 0 0 8px; }
+.paybox p { margin: 0 0 16px; color: var(--muted); }
